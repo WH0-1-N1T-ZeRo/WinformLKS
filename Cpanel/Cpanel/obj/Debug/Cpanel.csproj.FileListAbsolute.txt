@@ -1,0 +1,16 @@
+F:\WinForm\Cpanel\Cpanel\bin\Debug\Cpanel.exe.config
+F:\WinForm\Cpanel\Cpanel\bin\Debug\Cpanel.exe
+F:\WinForm\Cpanel\Cpanel\bin\Debug\Cpanel.pdb
+F:\WinForm\Cpanel\Cpanel\bin\Debug\EntityFramework.dll
+F:\WinForm\Cpanel\Cpanel\bin\Debug\EntityFramework.SqlServer.dll
+F:\WinForm\Cpanel\Cpanel\bin\Debug\EntityFramework.xml
+F:\WinForm\Cpanel\Cpanel\bin\Debug\EntityFramework.SqlServer.xml
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.csproj.AssemblyReference.cache
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.Form1.resources
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.Properties.Resources.resources
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.csproj.GenerateResource.cache
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.csproj.CoreCompileInputs.cache
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.csproj.Up2Date
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.exe
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.pdb
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.Form2.resources
