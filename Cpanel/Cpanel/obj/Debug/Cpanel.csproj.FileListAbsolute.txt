@@ -14,3 +14,5 @@ F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.csproj.Up2Date
 F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.exe
 F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.pdb
 F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.Form2.resources
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.Form4.resources
+F:\WinForm\Cpanel\Cpanel\obj\Debug\Cpanel.Form3.resources

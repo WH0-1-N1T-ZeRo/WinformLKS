@@ -31,20 +31,20 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.usersDataGridView = new System.Windows.Forms.DataGridView();
+            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_tabel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user_role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email_tabel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -74,9 +74,16 @@
             this.usersDataGridView.Location = new System.Drawing.Point(12, 7);
             this.usersDataGridView.Name = "usersDataGridView";
             this.usersDataGridView.ReadOnly = true;
+            this.usersDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.usersDataGridView.Size = new System.Drawing.Size(776, 361);
             this.usersDataGridView.TabIndex = 1;
             this.usersDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.usersDataGridView_CellFormatting);
+            // 
+            // Age
+            // 
+            this.Age.HeaderText = "Age";
+            this.Age.Name = "Age";
+            this.Age.ReadOnly = true;
             // 
             // button1
             // 
@@ -87,6 +94,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Add User";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -97,6 +105,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Deactivate";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -107,10 +116,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Activate";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataSource = typeof(Cpanel.users);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -134,12 +140,6 @@
             this.name_tabel.HeaderText = "Name";
             this.name_tabel.Name = "name_tabel";
             this.name_tabel.ReadOnly = true;
-            // 
-            // Age
-            // 
-            this.Age.HeaderText = "Age";
-            this.Age.Name = "Age";
-            this.Age.ReadOnly = true;
             // 
             // user_role
             // 
@@ -186,6 +186,10 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.Visible = false;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(Cpanel.users);
             // 
             // Form2
             // 

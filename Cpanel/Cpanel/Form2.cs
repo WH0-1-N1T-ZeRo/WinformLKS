@@ -60,5 +60,50 @@ namespace Cpanel
             return age.ToString();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (usersBindingSource.Current is users users)
+            {
+                var userToUpdate = db.users.Find(users.id);
+                if (userToUpdate != null)
+                {
+                    userToUpdate.status_user = "Active";
+                    db.SaveChanges();
+                    OnLoad(EventArgs.Empty);
+                }
+                else
+                {
+                    MessageBox.Show("User tidak ditemukan di database.");
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (usersBindingSource.Current is users users)
+            {
+                var userToUpdate = db.users.Find(users.id);
+                if (userToUpdate != null)
+                {
+                    userToUpdate.status_user = "Inactive";
+                    db.SaveChanges();
+                    OnLoad(EventArgs.Empty);
+                }
+                else
+                {
+                    MessageBox.Show("User tidak ditemukan di database.");
+                }
+            }
+        }
+
+        public void ReloadData()
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form4().Show();
+        }
     }
 }
